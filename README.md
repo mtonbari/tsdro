@@ -5,6 +5,6 @@
  ## Examples
  Two example scripts can be found in the src folder:
  
-  *run_tsdro.py: solves the two-stage distributionally robust model using a Wasserstein ambiguity set.
-  *run_saa.py: solves the two-stage model using Sample Average Approximation.
+    *run_tsdro.py: solves the two-stage distributionally robust model using a Wasserstein ambiguity set.
+    *run_saa.py: solves the two-stage model using Sample Average Approximation.
   
