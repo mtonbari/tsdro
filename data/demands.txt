@@ -1,0 +1,98 @@
+Alicia
+5 Houston 201 302 287
+4 Dallas 40 60 57
+3 San Antonio 80 121 115
+2 Corpus Christi 19 28 27
+1 Brownsville 5 7 7
+10 Lake Charles 5 7 7
+Camille 
+14 Biloxi 12 19 18
+13 New Orleans 296 491 467
+15 Mobile 44 73 69
+8 Jackson 1 1 1
+7 Memphis 52 86 82
+17 Nashville 43 70 67
+16 Birmingham 113 187 178
+Lili
+10 Lake Charles 56 6 13
+11 Baton Rouge 177 19 43
+13 New Orleans 1014 110 243
+9 Monroe 28 3 7
+6 Little Rock 48 5 11
+7 Memphis 177 19 43
+Bonnie
+21 Wilmington 59 12 28
+22 Charleston 314 66 146
+20 Charlotte 309 65 144
+19 Columbia 179 38 84
+Floyd
+21 Wilmington 493 93 206
+22 Charleston 2614 491 1092
+20 Charlotte 2571 483 1074
+19 Columbia 2986 561 1248
+23 Savannah 335 63 140
+Andrew
+29 Miami 3841 907 864
+28 Tampa 1997 472 449
+30 Key West 19 5 4
+27 Orlando 819 194 184
+13 New Orleans 666 157 150
+11 Baton Rouge 116 27 26
+10 Lake Charles 37 9 8
+14 Biloxi 1 0 0 
+8 Jackson 1 0 0
+9 Monroe 1 0 0
+Opal
+15 Mobile 121 222 212
+14 Biloxi 21 39 37
+24 Tallahassee 107 197 187
+16 Birmingham 207 381 363
+13 New Orleans 543 999 951
+Bertha
+21 Wilmington 111 56 928
+22 Charleston 885 442 7373
+20 Charlotte 580 290 4834
+19 Columbia 674 337 5615
+Isabel
+21 Wilmington 50 27 61
+22 Charleston 134 72 160
+20 Charlotte 263 142 316
+19 Columbia 153 82 183
+Katrina
+29 Miami 2945 37661 269009
+28 Tampa 1531 19584 139885
+30 Key West 15 188 1345
+27 Orlando 942 12052 86083
+13 New Orleans 3828 48960 349711
+11 Baton Rouge 535 6839 48852
+10 Lake Charles 127 1627 11621
+14 Biloxi 15 193 1381
+8 Jackson 3 41 292
+9 Monroe 3 40 287
+15 Mobile 455 5815 41535
+Fran
+21 Wilmington 274 96 685
+22 Charleston 1452 508 3631
+20 Charlotte 1428 500 3571
+19 Columbia 1659 581 4148
+23 Savannah 186 65 466
+Hugo
+22 Charleston 1732 1544 11027
+21 Wilmington 109 97 694
+19 Columbia 1484 1323 9448
+20 Charlotte 852 759 5422
+23 Savannah 222 198 1415
+Emily
+21 Wilmington 2818 80 571
+Dennis
+15 Mobile 9378 328 2344
+24 Tallahassee 8293 290 2073
+14 Biloxi 83 3 21
+8 Jackson 44 2 11
+30 Key West 202 7 51
+Georges
+29 Miami 1513 998 7128
+30 Key West 15 10 71
+13 New Orleans 590 389 2780
+14 Biloxi 5 3 22
+15 Mobile 117 77 550 
