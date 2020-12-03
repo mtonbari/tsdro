@@ -208,52 +208,6 @@ class GlobalOpt():
             print(sample_name, "added", count, "scenarios.")
         return found_hyp
 
-    def worst_case_prob_separation(self, stage1_vars):
-        scenarios = self.tsdro.scenarios
-        samples = self.tsdro.samples
-        stage2_objvals = self.get_stage2_costs(stage1_vars, scenarios)
-        dro_inner_model, q = self.tsdro.solveInnerDRO(stage2_objvals)
-        dro_inner_model.params.OutputFlag = 0
-        dro_inner_model.optimize()
-        pos_prob_scenarios = []
-        for scenario_name in scenarios.keys():
-            for sample_name in samples.keys():
-                if q[scenario_name, sample_name].X > 0:
-                    pos_prob_scenarios.append(scenario_name)
-        pos_prob_scenarios = set(pos_prob_scenarios)
-        if pos_prob_scenarios == set(self.master_scenarios):
-            found_hyp = False
-        else:
-            # scens = pos_prob_scenarios.union(self.master_scenarios)
-            scens = pos_prob_scenarios
-            # print(scens - pos_prob_scenarios.intersection(self.master_scenarios))
-            # print(len(pos_prob_scenarios), len(scens))
-            self.construct_master(scens)
-            self.master_scenarios = scens
-            found_hyp = True
-        return found_hyp
-
-    def optimization_separation(self, stage1_vars, sample_name):
-        curr_scenario_model = self.scenario_model.copy()
-        curr_scenario_model.optimize()
-        if curr_scenario_model.Status != 2:
-            warn("Separation not solved to optimality, Status:"
-                 + str(curr_scenario_model.Status))
-        parsed_solution = sc.parse_scenario_solution(self.scenario_vars)
-        scenario = sc.create_single_scenario(*parsed_solution)
-        scenario_name = sc.get_scenario_name(scenario)
-        # get 2nd stage solution then get objexpr...
-        stage2_objval = self.get_stage2_costs(stage1_vars, scenario_name)
-        hypograph_val = self.scenario_vars.hypograph_var.X
-        if stage2_objval < hypograph_val - 1e-6:
-            # get stage2objexpr
-            sc.update_scenario_model_row(curr_scenario_model, 
-                                         self.scenario_vars,
-                                         stage2_objval)
-            found_hyp = True
-        else:
-            found_hyp = False
-        return found_hyp
 
     def solve(self):
         """

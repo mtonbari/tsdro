@@ -17,7 +17,6 @@ import os
 import matplotlib.pyplot as plt
 from gurobipy import *
 
-
 # Initialize data
 import data_process as dat
 
@@ -35,7 +34,7 @@ sample_names, empirical_probs = sim.generate_samples(
 
 num_samples = len(sample_names)
 
-# initial_scenario_names = None
+# Starting set of scenarios
 initial_scenario_names = sample_names
 
 samples = {}

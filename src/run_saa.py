@@ -35,9 +35,6 @@ sample_names, empirical_probs = sim.generate_samples(
 
 num_samples = len(sample_names)
 
-# initial_scenario_names = None
-initial_scenario_names = sample_names
-
 samples = {}
 for sample_name in sample_names:
     samples[sample_name] = scenarios[sample_name]
