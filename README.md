@@ -8,3 +8,5 @@
     *run_tsdro.py: solves the two-stage distributionally robust model using a Wasserstein ambiguity set.
     *run_saa.py: solves the two-stage model using Sample Average Approximation.
   
+## References
+Carmen G. Rawls and Mark A. Turnquist, Pre-positioning of emergency supplies for disaster response, 2010.
